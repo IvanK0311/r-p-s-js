@@ -19,6 +19,7 @@ function getComputerChoice () {
 }
 
 function playRound (playerChoice, computerChoice) {
+    playerChoice = playerChoice.toLowerCase()
     if (playerChoice === computerChoice) {
         alert(`Tie! Player score : ${playerScore}. Computer score : ${computerScore}`)
     } else if (playerChoice === "rock" && computerChoice === "scissors") {
